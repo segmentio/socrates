@@ -1,5 +1,3 @@
-@import symbolset/ss-standard
-
 @mixin flexbox()
     display: -webkit-box
     display: -moz-box
@@ -249,6 +247,7 @@ body
     position: relative
     overflow: hidden
     z-index: 1
+    font-style: normal
 
 
 // Read
@@ -442,3 +441,27 @@ pre
     .regexp,
     .function
         color: $blue
+
+// Selected Font-Awesome characters
+@font-face
+    font-family: "FontAwesome"
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.eot?v=3.0.2')
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.eot?#iefix&v=3.0.2') format('embedded-opentype')
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.woff?v=3.0.2') format('woff')
+    src: url('http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.ttf?v=3.0.2') format('truetype')
+
+i.icon
+    font-style: normal
+    font-family: 'FontAwesome'
+
+i.icon-list-alt:before
+    content: '\f022'
+
+i.icon-plus:before
+    content: '\f067'
+
+i.icon-pencil:before
+    content: '\f040'
+
+i.icon-eye-open:before
+    content: '\f06e'
