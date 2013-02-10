@@ -90,7 +90,7 @@ article ul {
   list-style-type: disc; }
 article pre,
 article code {
-  font-family: "inconsolata", monospace;
+  font-family: "Cutive Mono", monospace;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 article pre {
@@ -199,7 +199,7 @@ body {
   font-style: normal; }
 
 .read {
-  font-family: "kepler-std", serif;
+  font-family: "Times New Roman", serif;
   border-left: 1px solid #f1f1e7;
   box-shadow: 0 -1px 10px #f1f1e7; }
 
@@ -211,7 +211,7 @@ body {
 
 .write,
 .document-textarea {
-  font-family: "inconsolata", monospace;
+  font-family: "Cutive Mono", monospace;
   font-size: 12px;
   line-height: 1.2; }
   @media (min-width: 1200px) {
@@ -322,7 +322,7 @@ body {
   flex: 1; }
 
 .attribution {
-  font-family: "kepler-std", serif;
+  font-family: "Times New Roman", serif;
   padding: 1rem;
   text-align: center;
   color: rgba(53, 51, 46, 0.4); }
