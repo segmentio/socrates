@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="socrates.css">
         <script src="https://static.firebase.com/v0/firebase.js"></script>
-        <script src="http://use.typekit.net/gmy5jor.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
         <script type="text/x-mathjax-config">
           MathJax.Hub.Config({
             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -27,9 +27,9 @@
             <ul class="document-menu"></ul>
             <form class="write-form">
                 <div class="write-buttons">
-                    <button class="menu-button ss-rows"></button>
-                    <button class="add-button ss-plus"></button>
-                    <button class="write-only-button ss-write"></button>
+                    <button class="menu-button"><i class="icon icon-list-alt"></i></button>
+                    <button class="add-button ss-plus"><i class="icon icon-plus"></i></button>
+                    <button class="write-only-button ss-write"><i class="icon icon-pencil"></i></button>
                 </div>
                 <div class="write-textarea-wrap">
                     <textarea class="document-textarea"></textarea>
@@ -40,7 +40,7 @@
 
         <section class="read">
             <div class="read-buttons">
-                <button class="read-only-button ss-view"></button>
+                <button class="read-only-button ss-view"><i class="icon icon-eye-open"></i></button>
             </div>
             <article class="document-article"></article>
         </section>
