@@ -45,7 +45,7 @@
   content: '⌖'; }
 
 .ss-search:before, .ss-search.right:after {
-  content: '🔎'; }
+  content: ''; }
 
 .ss-zoomin:before, .ss-zoomin.right:after {
   content: ''; }
@@ -54,13 +54,13 @@
   content: ''; }
 
 .ss-view:before, .ss-view.right:after {
-  content: '👀'; }
+  content: ''; }
 
 .ss-attach:before, .ss-attach.right:after {
-  content: '📎'; }
+  content: ''; }
 
 .ss-link:before, .ss-link.right:after {
-  content: '🔗'; }
+  content: ''; }
 
 .ss-move:before, .ss-move.right:after {
   content: ''; }
@@ -75,22 +75,22 @@
   content: '✐'; }
 
 .ss-compose:before, .ss-compose.right:after {
-  content: '📝'; }
+  content: ''; }
 
 .ss-lock:before, .ss-lock.right:after {
-  content: '🔒'; }
+  content: ''; }
 
 .ss-unlock:before, .ss-unlock.right:after {
-  content: '🔓'; }
+  content: ''; }
 
 .ss-key:before, .ss-key.right:after {
-  content: '🔑'; }
+  content: ''; }
 
 .ss-backspace:before, .ss-backspace.right:after {
   content: '⌫'; }
 
 .ss-ban:before, .ss-ban.right:after {
-  content: '🚫'; }
+  content: ''; }
 
 .ss-trash:before, .ss-trash.right:after {
   content: ''; }
@@ -102,16 +102,16 @@
   content: ''; }
 
 .ss-bookmark:before, .ss-bookmark.right:after {
-  content: '🔖'; }
+  content: ''; }
 
 .ss-flag:before, .ss-flag.right:after {
   content: '⚑'; }
 
 .ss-like:before, .ss-like.right:after {
-  content: '👍'; }
+  content: ''; }
 
 .ss-dislike:before, .ss-dislike.right:after {
-  content: '👎'; }
+  content: ''; }
 
 .ss-heart:before, .ss-heart.right:after {
   content: '♥'; }
@@ -135,7 +135,7 @@
   content: ''; }
 
 .ss-phone:before, .ss-phone.right:after {
-  content: '📞'; }
+  content: ''; }
 
 .ss-phonedisabled:before, .ss-phonedisabled.right:after {
   content: ''; }
@@ -156,43 +156,43 @@
   content: '✉'; }
 
 .ss-inbox:before, .ss-inbox.right:after {
-  content: '📥'; }
+  content: ''; }
 
 .ss-chat:before, .ss-chat.right:after {
-  content: '💬'; }
+  content: ''; }
 
 .ss-user:before, .ss-user.right:after {
-  content: '👤'; }
+  content: ''; }
 
 .ss-femaleuser:before, .ss-femaleuser.right:after {
-  content: '👧'; }
+  content: ''; }
 
 .ss-users:before, .ss-users.right:after {
-  content: '👥'; }
+  content: ''; }
 
 .ss-cart:before, .ss-cart.right:after {
   content: ''; }
 
 .ss-creditcard:before, .ss-creditcard.right:after {
-  content: '💳'; }
+  content: ''; }
 
 .ss-dollarsign:before, .ss-dollarsign.right:after {
-  content: '💲'; }
+  content: ''; }
 
 .ss-barchart:before, .ss-barchart.right:after {
-  content: '📊'; }
+  content: ''; }
 
 .ss-piechart:before, .ss-piechart.right:after {
   content: ''; }
 
 .ss-box:before, .ss-box.right:after {
-  content: '📦'; }
+  content: ''; }
 
 .ss-home:before, .ss-home.right:after {
   content: '⌂'; }
 
 .ss-globe:before, .ss-globe.right:after {
-  content: '🌎'; }
+  content: ''; }
 
 .ss-navigate:before, .ss-navigate.right:after {
   content: ''; }
@@ -210,7 +210,7 @@
   content: ''; }
 
 .ss-pin:before, .ss-pin.right:after {
-  content: '📍'; }
+  content: ''; }
 
 .ss-database:before, .ss-database.right:after {
   content: ''; }
@@ -222,28 +222,28 @@
   content: '♫'; }
 
 .ss-mic:before, .ss-mic.right:after {
-  content: '🎤'; }
+  content: ''; }
 
 .ss-volume:before, .ss-volume.right:after {
-  content: '🔈'; }
+  content: ''; }
 
 .ss-volumelow:before, .ss-volumelow.right:after {
-  content: '🔉'; }
+  content: ''; }
 
 .ss-volumehigh:before, .ss-volumehigh.right:after {
-  content: '🔊'; }
+  content: ''; }
 
 .ss-airplay:before, .ss-airplay.right:after {
   content: ''; }
 
 .ss-camera:before, .ss-camera.right:after {
-  content: '📷'; }
+  content: ''; }
 
 .ss-picture:before, .ss-picture.right:after {
-  content: '🌄'; }
+  content: ''; }
 
 .ss-video:before, .ss-video.right:after {
-  content: '📹'; }
+  content: ''; }
 
 .ss-play:before, .ss-play.right:after {
   content: '▶'; }
@@ -273,22 +273,22 @@
   content: '⏏'; }
 
 .ss-repeat:before, .ss-repeat.right:after {
-  content: '🔁'; }
+  content: ''; }
 
 .ss-replay:before, .ss-replay.right:after {
   content: '↺'; }
 
 .ss-shuffle:before, .ss-shuffle.right:after {
-  content: '🔀'; }
+  content: ''; }
 
 .ss-book:before, .ss-book.right:after {
-  content: '📕'; }
+  content: ''; }
 
 .ss-openbook:before, .ss-openbook.right:after {
-  content: '📖'; }
+  content: ''; }
 
 .ss-notebook:before, .ss-notebook.right:after {
-  content: '📓'; }
+  content: ''; }
 
 .ss-grid:before, .ss-grid.right:after {
   content: ''; }
@@ -303,7 +303,7 @@
   content: ''; }
 
 .ss-desktop:before, .ss-desktop.right:after {
-  content: '💻'; }
+  content: ''; }
 
 .ss-laptop:before, .ss-laptop.right:after {
   content: ''; }
@@ -312,10 +312,10 @@
   content: ''; }
 
 .ss-cell:before, .ss-cell.right:after {
-  content: '📱'; }
+  content: ''; }
 
 .ss-battery:before, .ss-battery.right:after {
-  content: '🔋'; }
+  content: ''; }
 
 .ss-batteryhigh:before, .ss-batteryhigh.right:after {
   content: ''; }
@@ -363,10 +363,10 @@
   content: ''; }
 
 .ss-file:before, .ss-file.right:after {
-  content: '📄'; }
+  content: ''; }
 
 .ss-folder:before, .ss-folder.right:after {
-  content: '📁'; }
+  content: ''; }
 
 .ss-quote:before, .ss-quote.right:after {
   content: '“'; }
@@ -381,7 +381,7 @@
   content: '⎙'; }
 
 .ss-fax:before, .ss-fax.right:after {
-  content: '📠'; }
+  content: ''; }
 
 .ss-list:before, .ss-list.right:after {
   content: ''; }
@@ -435,10 +435,10 @@
   content: ''; }
 
 .ss-notifications:before, .ss-notifications.right:after {
-  content: '🔔'; }
+  content: ''; }
 
 .ss-notificationsdisabled:before, .ss-notificationsdisabled.right:after {
-  content: '🔕'; }
+  content: ''; }
 
 .ss-clock:before, .ss-clock.right:after {
   content: '⏲'; }
@@ -447,7 +447,7 @@
   content: '⏱'; }
 
 .ss-calendar:before, .ss-calendar.right:after {
-  content: '📅'; }
+  content: ''; }
 
 .ss-calendaradd:before, .ss-calendaradd.right:after {
   content: ''; }
@@ -462,13 +462,13 @@
   content: ''; }
 
 .ss-briefcase:before, .ss-briefcase.right:after {
-  content: '💼'; }
+  content: ''; }
 
 .ss-cloud:before, .ss-cloud.right:after {
   content: '☁'; }
 
 .ss-droplet:before, .ss-droplet.right:after {
-  content: '💧'; }
+  content: ''; }
 
 .ss-up:before, .ss-up.right:after {
   content: '⬆'; }
@@ -881,3 +881,30 @@ pre .string:not(.value),
 pre .regexp,
 pre .function {
   color: #4b8b8d; }
+
+
+@media print {
+	.write,
+	.read-buttons {
+		display: none;
+	}
+	.document-article {
+		padding:0;
+		max-width:none;
+	}
+	* {
+		background: white !important;
+		color: black !important;
+	}
+	a {
+		text-decoration: none !important;
+	}
+	a[href]:after {
+		color:#666;
+		font-size: 75%;
+		content: " (" attr(href) ")";
+	}
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  	img { max-width: 100% !important; }
+}
+
