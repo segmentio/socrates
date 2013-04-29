@@ -3,6 +3,10 @@
 .sass-cache
 node_modules
 
+# Jetbrains Idea
+*.iml
+.idea
+
 # Ignore SymbolSet font files.
 symbolset/ss-standard.eot
 symbolset/ss-standard.svg
