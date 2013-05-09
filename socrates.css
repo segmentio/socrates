@@ -810,7 +810,7 @@ body {
 .add-button {
   float: left; }
 
-.qrcode-write-button,
+.write-qrcode-button,
 .write-only-button {
   float: right; }
 
@@ -819,6 +819,17 @@ body {
 
 .menu-button {
   padding-right: 0.33333rem; }
+
+.write-qrcode-area,
+.read-qrcode-area {
+  clear: both;
+  display: none; }
+
+.read-qrcode-area {
+  float: left; }
+
+.write-qrcode-area {
+  float: right; }
 
 .write-only .read,
 .read-only .write {

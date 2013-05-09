@@ -25,24 +25,30 @@ Socrates.View = Backbone.View.extend({
     youtubeEmbedTemplate : _.template('<iframe width="100%" height="400" src="http://www.youtube.com/embed/<%= id %>" frameborder="0" allowfullscreen></iframe>'),
 
     events : {
-        'keyup .document-textarea' : 'onTextareaKeyup',
-        'click .read-only-button'  : 'onReadOnlyButtonClick',
-        'click .write-only-button' : 'onWriteOnlyButtonClick',
-        'click .add-button'        : 'onAddButtonClick',
-        'click .menu-button'       : 'onMenuButtonClick'
+        'keyup .document-textarea'   : 'onTextareaKeyup',
+        'click .read-only-button'    : 'onReadOnlyButtonClick',
+        'click .write-only-button'   : 'onWriteOnlyButtonClick',
+        'click .add-button'          : 'onAddButtonClick',
+        'click .menu-button'         : 'onMenuButtonClick',
+        'click .write-qrcode-button' : 'onQrCodeWriteButtonClick',
+        'click .read-qrcode-button'  : 'onQrCodeReadButtonClick'
     },
 
     initialize : function (options) {
         _.bindAll(this);
 
         // Cache some jQuery selectors.
-        this.$title           = this.$('title');
-        this.$menu            = this.$('.document-menu');
-        this.$textarea        = this.$('.document-textarea');
-        this.$article         = this.$('.document-article');
-        this.$menuButton      = this.$('.menu-button');
-        this.$readOnlyButton  = this.$('.read-only-button');
-        this.$writeOnlyButton = this.$('.write-only-button');
+        this.$title             = this.$('title');
+        this.$menu              = this.$('.document-menu');
+        this.$textarea          = this.$('.document-textarea');
+        this.$article           = this.$('.document-article');
+        this.$menuButton        = this.$('.menu-button');
+        this.$readOnlyButton    = this.$('.read-only-button');
+        this.$writeOnlyButton   = this.$('.write-only-button');
+        this.$writeQrCodeButton = this.$('.write-qrcode-button');
+        this.$writeQrCodeArea   = this.$('.write-qrcode-area');
+        this.$readQrCodeButton  = this.$('.read-qrcode-button');
+        this.$readQrCodeArea    = this.$('.read-qrcode-area');
 
         // Allow tabs in the textarea using a jQuery plugin.
         this.$textarea.tabby({tabString:'    '});
@@ -281,6 +287,44 @@ Socrates.View = Backbone.View.extend({
         this.model.set('state', state);
 
         window.analytics.track('Press Write-only Button');
+    },
+
+    onQrCodeReadButtonClick : function (event) {
+        event.preventDefault();
+
+        var imgtag = this.lazy_init_qrcode('readQrCodeImgTag', 'read');
+        this.$readQrCodeArea.empty().append(imgtag).toggle(250);
+
+        this.$readQrCodeButton.toggleState('pressed');
+
+        window.analytics.track('Press Read-QrCode Button');
+    },
+
+    onQrCodeWriteButtonClick : function (event) {
+        event.preventDefault();
+
+        var imgtag = this.lazy_init_qrcode('writeQrCodeImgTag', 'write');
+        this.$writeQrCodeArea.empty().append(imgtag).toggle(250);
+
+        this.$writeQrCodeButton.toggleState('pressed');
+
+        window.analytics.track('Press Write-QrCode Button');
+    },
+
+    lazy_init_qrcode : function (modelName, urlSuffix) {
+        var imgtag = this.model.get(modelName);
+        if (imgtag == null) {
+            imgtag = this.create_qrcode_ImgTag(document.URL + "/" + urlSuffix);
+            this.model.set(modelName, imgtag);
+        }
+        return imgtag;
+    },
+
+    create_qrcode_ImgTag : function(text, typeNumber, errorCorrectLevel) {
+        var qr = qrcode(typeNumber || 4, errorCorrectLevel || 'M');
+        qr.addData(text);
+        qr.make();
+        return qr.createImgTag();
     },
 
     onAppDocumentChange : function (model, document) {
