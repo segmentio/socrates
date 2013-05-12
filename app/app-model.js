@@ -8,7 +8,9 @@ Socrates.Model = Backbone.Model.extend({
     defaults : {
         document  : null,
         documents : null,
-        state     : null
+        state     : null,
+        readQrCodeImgTag  : null,
+        writeQrCodeImgTag : null
     },
 
     bookmarkKey : 'socrates.bookmarks',

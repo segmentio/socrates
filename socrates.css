@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 /*
 * Symbolset
 * www.symbolset.com
@@ -521,6 +521,9 @@
 .ss-retweet:before, .ss-retweet.right:after {
   content: ''; }
 
+.ss-squares:before, .ss-squares.right:after {
+  content: ''; }
+
 html {
   font-size: 16px;
   line-height: 1.45;
@@ -807,6 +810,7 @@ body {
 .add-button {
   float: left; }
 
+.write-qrcode-button,
 .write-only-button {
   float: right; }
 
@@ -815,6 +819,17 @@ body {
 
 .menu-button {
   padding-right: 0.33333rem; }
+
+.write-qrcode-area,
+.read-qrcode-area {
+  clear: both;
+  display: none; }
+
+.read-qrcode-area {
+  float: left; }
+
+.write-qrcode-area {
+  float: right; }
 
 .write-only .read,
 .read-only .write {
